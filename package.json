@@ -1,0 +1,23 @@
+{
+  "name": "stylelint-config-nucleum",
+  "version": "1.0.0",
+  "description": "Shareable stylelint config for Nucleum",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelint-itcss",
+    "itcss"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/CosAnca/stylelint-config-nucleum.git",
+  "author": "Cos Anca (@Cos_Anca)",
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^10.1.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-property-sort-order-smacss": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.17.1"
+  }
+}
