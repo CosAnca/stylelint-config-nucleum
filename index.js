@@ -1,17 +1,17 @@
 module.exports = {
-  "extends": [
+  extends: [
     "stylelint-config-recommended",
-    "stylelint-config-property-sort-order-smacss"
+    "stylelint-config-property-sort-order-smacss",
   ],
-  "plugins": ["stylelint-scss"],
-  "rules": {
+  plugins: ["stylelint-scss"],
+  rules: {
     "at-rule-no-unknown": null,
     "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": [
       "always",
       {
-        "ignoreAtRules": ["if", "else"]
-      }
+        ignoreAtRules: ["if", "else"],
+      },
     ],
     "block-closing-brace-newline-before": "always-multi-line",
     "block-no-empty": true,
@@ -28,24 +28,24 @@ module.exports = {
     "declaration-colon-space-after": "always",
     "declaration-colon-space-before": "never",
     "declaration-no-important": true,
-    "declaration-property-unit-whitelist": {
-      "line-height": []
+    "declaration-property-unit-allowed-list": {
+      "line-height": [],
     },
-    "declaration-property-value-blacklist": {
-      "/^transition/": ["/all/"]
+    "declaration-property-value-disallowed-list": {
+      "/^transition/": ["/all/"],
     },
     "function-calc-no-invalid": true,
     "function-comma-space-after": "always-single-line",
     "function-comma-space-before": "never",
     "function-parentheses-space-inside": "never-single-line",
     "function-url-quotes": "always",
-    "indentation": 2,
+    indentation: 2,
     "length-zero-no-unit": true,
     "max-nesting-depth": [
       3,
       {
-        "ignoreAtRules": ["if", "else", "for", "each"]
-      }
+        ignoreAtRules: ["if", "else", "for", "each"],
+      },
     ],
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true,
@@ -55,9 +55,9 @@ module.exports = {
     "rule-empty-line-before": [
       "always",
       {
-        "except": ["first-nested"],
-        "ignore": ["after-comment"]
-      }
+        except: ["first-nested"],
+        ignore: ["after-comment"],
+      },
     ],
     "scss/at-each-key-value-single-line": true,
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
@@ -73,16 +73,9 @@ module.exports = {
     "scss/no-duplicate-dollar-variables": [
       true,
       {
-        "ignoreInside": ["at-rule", "nested-at-rule"],
-        "ignoreInsideAtRules": [
-          "if",
-          "else",
-          "for",
-          "each",
-          "function",
-          "mixin"
-        ]
-      }
+        ignoreInside: ["at-rule", "nested-at-rule"],
+        ignoreInsideAtRules: ["if", "else", "for", "each", "function", "mixin"],
+      },
     ],
     "scss/operator-no-unspaced": true,
     "scss/selector-no-redundant-nesting-selector": true,
@@ -90,8 +83,9 @@ module.exports = {
     "selector-class-pattern": [
       "^(?:(?:c|o|s|t|u|is|has)-|_)[a-z0-9\\@]+(?:-[a-z0-9\\/\\@]+)*(?:__[a-z0-9]+(?:-[a-z0-9]+)*)?(?:--[a-z0-9\\:\\/\\@]+(?:-[a-z0-9\\@]+)*)?(?:\\[.+\\])?$",
       {
-        "message": "Selector should be namespaced and written in lowercase hyphenated BEM. (selector-class-pattern)"
-      }
+        message:
+          "Selector should be namespaced and written in lowercase hyphenated BEM. (selector-class-pattern)",
+      },
     ],
     "selector-list-comma-newline-after": "always",
     "selector-max-id": 0,
@@ -103,6 +97,6 @@ module.exports = {
     "selector-type-case": "lower",
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
-    "value-no-vendor-prefix": true
-  }
-}
+    "value-no-vendor-prefix": true,
+  },
+};
