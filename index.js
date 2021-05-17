@@ -48,6 +48,8 @@ module.exports = {
       },
     ],
     "no-eol-whitespace": true,
+    "no-invalid-position-at-import-rule": true,
+    "no-irregular-whitespace": true,
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
