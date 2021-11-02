@@ -34,7 +34,6 @@ module.exports = {
     "declaration-property-value-disallowed-list": {
       "/^transition/": ["/all/"],
     },
-    "function-calc-no-invalid": true,
     "function-comma-space-after": "always-single-line",
     "function-comma-space-before": "never",
     "function-parentheses-space-inside": "never-single-line",
