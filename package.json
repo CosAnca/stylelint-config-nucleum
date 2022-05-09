@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-nucleum",
-  "version": "2.2.3",
+  "version": "3.0.0",
   "description": "Shareable stylelint config for Nucleum",
   "keywords": [
     "stylelint",
@@ -16,10 +16,10 @@
     "stylelint": "^10.1.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.3.0"
   },
   "dependencies": {
-    "stylelint-config-property-sort-order-smacss": "^8.0.0",
-    "stylelint-config-recommended": "^6.0.0",
-    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-scss": "^4.1.0"
+    "stylelint-scss": "^4.2.0"
   }
 }
