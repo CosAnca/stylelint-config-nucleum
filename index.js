@@ -67,6 +67,7 @@ module.exports = {
     "scss/at-function-parentheses-space-before": "never",
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-import-partial-extension-blacklist": ["scss"],
+    "scss/at-mixin-pattern": "(?:_)?[a-zA-Z]+(?:-[a-zA-Z]+)*(?:_)?[a-zA-Z]+",
     "scss/at-rule-no-unknown": true,
     "scss/comment-no-empty": null,
     "scss/dollar-variable-colon-space-after": "always",
@@ -80,6 +81,7 @@ module.exports = {
       },
     ],
     "scss/operator-no-unspaced": true,
+    "scss/operator-no-newline-after": null,
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/selector-no-union-class-name": true,
     "selector-class-pattern": [
